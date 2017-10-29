@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Jerome Foster II
+        </title>
+        <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+              <a-assets>
+                     <a-asset-item id="tree" src="model.dae"></a-asset-item>
+                      <a-asset-item id="color" src="model"></a-asset-item>
+              </a-assets>
+              
+              <a-sky color="lightblue" ></a-sky>
+              
+              <a-collada-model 
+                src="#tree" 
+                position="-120 -2 115" 
+                scale="1 1 1"
+              ></a-collada-model>
+              
+            <a-plane 
+                src="images.jfif" 
+                position="0 -1.95 0" 
+                height="100" width="100" 
+                rotation="-90 0 0"
+            ></a-plane>
+        </a-scene>
+    </body>
+</html>
